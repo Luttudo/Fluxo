@@ -6,14 +6,13 @@
     <title>Sistema de Otimização de Fluxo em Redes Urbanas</title>
     <style>
         /* Custom display font: Roundy Rainbows
-           Place font files in: assets/fonts/RoundyRainbows.woff2 (preferred) and/or .woff/.ttf
-           Example paths used below: assets/fonts/RoundyRainbows.woff2
-           If the font files are not present, fall back to the system UI font. */
+           Place the WOFF2 font file in: assets/fonts/RoundyRainbows.woff2 (preferred).
+           Only WOFF2 is referenced to prefer the modern, compressed format.
+           If the WOFF2 file is not present, the UI falls back to the system font.
+        */
         @font-face {
             font-family: 'RoundyRainbows';
-            src: url('./assets/fonts/RoundyRainbows.woff2') format('woff2'),
-                 url('./assets/fonts/RoundyRainbows.woff') format('woff'),
-                 url('./assets/fonts/RoundyRainbows.ttf') format('truetype');
+            src: url('./assets/fonts/RoundyRainbows.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -338,8 +337,8 @@
             background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
         }
 
-        /* Per-letter animation for the header word "fluxo".
-           Slower timing & stagger so each letter arrives sequentially with a bounce.
+        /* Animação para o nome "fluxo" 
+           
         */
         .header-section h1 .letter {
             display: inline-block;
